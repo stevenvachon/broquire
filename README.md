@@ -8,7 +8,7 @@ Require that returns different values in browsers than node.js and tricks browse
 
 Takes a named identifier for a module identical to node's `require`. In node.js the return value is always identical to node's `require`.
 
-If no `browserValue` is given an empty object will be returned in the browser. If a string if given then `window[browserValue]` will be returned. If an object is passed then it will be returned.
+If no `browserValue` is given an empty object will be returned in the browser. If a string is given then `window[browserValue]` will be returned. If an object is passed then it will be returned.
 
 ```javascript
 var broquire = require('broquire')
