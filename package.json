@@ -14,7 +14,7 @@
     "browserify",
     "require"
   ],
-  [ "iexplore/8.0",
+  "browsers": [ "iexplore/8.0",
     "iexplore/10.0",
     "iexplore/9.0",
     "chrome/25.0",
@@ -28,7 +28,7 @@
     "ipad/6.0",
     "safari/6.0",
     "android-browser/4.2"
-  ]
+  ],
   "author": "Mikeal Rogers",
   "license": "BSD"
 }
