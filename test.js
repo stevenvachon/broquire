@@ -12,7 +12,7 @@ var assert = require('assert')
 if (browser) {
   assert.deepEqual(broquire('name'), {})
   assert.deepEqual(broquire('name', {test:1}), {test:1})
-  assert.equal(broquire('broquire', true), true)
+  assert.equal(broquire('assert', true), true)
 } else {
   assert.deepEqual(broquire('assert'), require('assert'))
 }
