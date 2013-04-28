@@ -16,7 +16,8 @@
   ],
   "testling": {
     "files": "test.js",
-    "browsers": [ "iexplore/8.0",
+    "browsers": [
+      "iexplore/8.0",
       "iexplore/10.0",
       "iexplore/9.0",
       "chrome/25.0",
