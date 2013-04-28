@@ -2,7 +2,7 @@ var browser
 if (typeof window === 'undefined') {
   browser = false
 } else {
-  browser = window
+  browser = true
 }
 
 module.exports = function (name) {
