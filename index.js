@@ -7,7 +7,7 @@ if (typeof window === 'undefined') {
 
 module.exports = function (name, winstr) {
   if (browser) {
-    if (!winstr) return {}
+    if (typeof winstr === 'undefined') return {}
     if (typeof winstr === 'string') return window[winstr]
     return winstr
   }
