@@ -7,7 +7,7 @@ if (typeof window === 'undefined') {
 }
 
 var assert = require('assert')
-  , broquire = require('./')
+  , broquire = require('./')(require)
   , ok = require('okdone')
   ;
 
