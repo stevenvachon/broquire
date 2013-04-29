@@ -1,6 +1,6 @@
 {
   "name": "broquire",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Require that returns different values in the browser than node and avoids the node module being browserified.",
   "main": "index.js",
   "scripts": {
