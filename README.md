@@ -28,6 +28,6 @@ var eioClient = broquire('engine.io-client', 'eio')
 
 *Why do I need to pass require in to this function?*
 
-Every time node executes a file it give it a version of require that will resolve modules relative to that file and directory. Passing your `require` to `broquire` allows it to import node modules exactly as you would with a regular require statement.
+Every time node executes a file it gives you a version of require that will resolve modules relative to that file and directory. Passing your `require` to `broquire` allows it to import node modules exactly as you would with a regular require statement.
 
 
