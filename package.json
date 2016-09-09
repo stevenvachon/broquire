@@ -2,10 +2,6 @@
   "name": "broquire",
   "version": "0.3.1",
   "description": "Require that returns different values in the browser than node and avoids the node module being browserified.",
-  "main": "index.js",
-  "scripts": {
-    "test": "node test.js"
-  },
   "dependencies": {
     "is-browser": "^2.0.1"
   },
@@ -13,32 +9,23 @@
     "type": "git",
     "url": "https://github.com/mikeal/broquire.git"
   },
+  "devDependencies": {
+    "browserify": "^14.3.0",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "mocha": "^3.3.0",
+    "nightmare": "^2.10.0",
+    "xvfb-maybe": "~0.2.1"
+  },
+  "scripts": {
+    "pretest": "browserify test/fixtures/broquire.js --standalone broquire -o test/fixtures/broquire-built.js",
+    "test": "xvfb-maybe mocha test/ --reporter spec --check-leaks --bail"
+  },
+  "files": ["index.js"],
   "keywords": [
     "browserify",
     "require"
   ],
-  "testling": {
-    "files": "test.js",
-    "browsers": [
-      "iexplore/8.0",
-      "iexplore/10.0",
-      "iexplore/9.0",
-      "chrome/25.0",
-      "firefox/18.0",
-      "firefox/19.0",
-      "opera/12.0",
-      "firefox/nightly",
-      "opera/next",
-      "chrome/canary",
-      "iphone/6.0",
-      "ipad/6.0",
-      "safari/6.0",
-      "android-browser/4.2"
-    ]
-  },
   "author": "Mikeal Rogers",
-  "license": "BSD",
-  "devDependencies": {
-    "okdone": "~0.2.0"
-  }
+  "license": "BSD"
 }
