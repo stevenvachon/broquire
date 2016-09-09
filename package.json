@@ -6,6 +6,9 @@
   "scripts": {
     "test": "node test.js"
   },
+  "dependencies": {
+    "is-browser": "^2.0.1"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/mikeal/broquire.git"
